@@ -6,7 +6,14 @@ def main(event, context):
     """Main http lambda"""
     print(f"Event: {event}")
     print(f"Context: {context}")
-    message = "Hello, World!"
+    name = "World"
+    if (
+        "queryStringParameters" in event
+        and event["queryStringParameters"] is not None
+        and "Name" in event["queryStringParameters"]
+    ):
+        name = event["queryStringParameters"]["Name"]
+    message = f"Hello, {name}!"
 
     return {
         "statusCode": 200,

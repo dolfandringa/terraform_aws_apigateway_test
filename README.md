@@ -1,6 +1,3 @@
-# Learn Terraform - Lambda functions and API Gateway
+# Terraform Serverless
 
-AWS Lambda functions and API gateway are often used to create serverless
-applications.
-
-This repo is a companion repo to the [AWS Lambda functions and API gateway](https://developer.hashicorp.com/terraform/tutorials/aws/lambda-api-gateway) tutorial.
+Testing the deployment of python lambda functions with Terraform as serverless api endpoints through the api gateway

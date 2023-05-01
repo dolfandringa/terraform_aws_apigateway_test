@@ -3,13 +3,13 @@
 
 terraform {
 
-  /*
-  cloud {
-    workspaces {
-      name = "learn-terraform-lambda-api-gateway"
-    }
+
+  backend "s3" {
+    bucket = "intelliconnect-terraform-state"
+    # The key definition changes following the environment
+    key    = "environments/dev"
+    region = "ap-southeast-2"
   }
-  */
 
   required_providers {
     aws = {
