@@ -32,5 +32,9 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-hello-world.zip
 response.json
+artifact.zip
+hello-world/dist/*
+hello-world/package/*
+**/__pycache__/*
+*.pyc
